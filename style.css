@@ -1,0 +1,115 @@
+/* ====== Global Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== Body Styling ====== */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* ====== Search Bar ====== */
+.Search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #161b22;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.Search input {
+  flex: 1;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.Search input:focus {
+  border-color: #58a6ff;
+}
+
+.Search button {
+  background: #238636;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.Search button:hover {
+  background: #2ea043;
+}
+
+/* ====== Profile Card ====== */
+.profileCard {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.profileCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #58a6ff;
+  margin-bottom: 20px;
+}
+
+#info {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  background: #0d1117;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 500px) {
+  .Search {
+    flex-direction: column;
+  }
+
+  .Search button {
+    width: 100%;
+  }
+
+  .profileCard {
+    padding: 20px;
+  }
+
+  #info {
+    font-size: 14px;
+  }
+}
