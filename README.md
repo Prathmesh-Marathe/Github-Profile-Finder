@@ -57,7 +57,5 @@ Handles the logic:
 ---
 
 ## 📸 Screenshot
-*(You can add your own screenshot here)*
 
-```markdown
-![App Screenshot](screenshot.png)
+![App Screenshot](Image1.png)
